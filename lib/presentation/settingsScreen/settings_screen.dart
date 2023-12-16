@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'bloc/SettingsBloc.dart';
-import 'bloc/SettingsEvent.dart';
-import 'bloc/SettingsState.dart';
+import 'bloc/settings_bloc.dart';
+import 'bloc/settings_event.dart';
+import 'bloc/settings_state.dart';
 
 enum SingingCharacter { ru, eng }
 
@@ -41,8 +41,8 @@ class SettingsSreen extends StatelessWidget {
                           value: SingingCharacter.ru,
                           groupValue: character,
                           onChanged: (SingingCharacter? value) {
-                            BlocProvider.of<SettingBloc>(context)
-                                .add(SettingsRequested(value:  SingingCharacter.ru));
+                            BlocProvider.of<SettingBloc>(context).add(
+                                SettingsRequested(value: SingingCharacter.ru));
                           },
                         ),
                       ),
@@ -52,8 +52,8 @@ class SettingsSreen extends StatelessWidget {
                           value: SingingCharacter.eng,
                           groupValue: character,
                           onChanged: (SingingCharacter? value) {
-                            BlocProvider.of<SettingBloc>(context)
-                                .add(SettingsRequested(value: SingingCharacter.eng));
+                            BlocProvider.of<SettingBloc>(context).add(
+                                SettingsRequested(value: SingingCharacter.eng));
                           },
                         ),
                       ),
@@ -83,8 +83,8 @@ class SettingsSreen extends StatelessWidget {
                           value: SingingCharacter.ru,
                           groupValue: character,
                           onChanged: (SingingCharacter? value) {
-                            BlocProvider.of<SettingBloc>(context)
-                                .add(SettingsRequested(value: SingingCharacter.ru));
+                            BlocProvider.of<SettingBloc>(context).add(
+                                SettingsRequested(value: SingingCharacter.ru));
                           },
                         ),
                       ),
@@ -94,8 +94,8 @@ class SettingsSreen extends StatelessWidget {
                           value: SingingCharacter.eng,
                           groupValue: character,
                           onChanged: (SingingCharacter? value) {
-                            BlocProvider.of<SettingBloc>(context)
-                                .add(SettingsRequested(value: SingingCharacter.eng));
+                            BlocProvider.of<SettingBloc>(context).add(
+                                SettingsRequested(value: SingingCharacter.eng));
                           },
                         ),
                       ),
@@ -119,7 +119,7 @@ class SettingsSreen extends StatelessWidget {
                   body: const Center(
                     child: Text('Произошла ошибка при попытке перевода'),
                   ));
-            } 
+            }
           },
         ));
   }

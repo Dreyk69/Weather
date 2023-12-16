@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:krosplatforma/presentation/settingsScreen/settingsScreen.dart';
+import 'package:krosplatforma/presentation/settingsScreen/settings_screen.dart';
 
-import 'bloc/WeatherBloc.dart';
-import 'bloc/WeatherEvent.dart';
-import 'bloc/WeatherState.dart';
-import 'widgets/delegate.dart';
-import 'widgets/mainScreeenWidget.dart';
+import 'bloc/weather_bloc.dart';
+import 'bloc/weather_event.dart';
+import 'bloc/weather_state.dart';
+import 'widgets/delegate_widget.dart';
+import 'widgets/main_screeen_widget.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

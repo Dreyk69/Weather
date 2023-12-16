@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
-import '../../../data/api/model/WeatherTodayModel.dart';
-import '../../../data/api/model/WeatherHoursModel.dart';
-import '../../../data/api/model/WeatherWeekModel.dart';
+import '../../../data/api/model/weatherTodayModel.dart';
+import '../../../data/api/model/weatherHoursModel.dart';
+import '../../../data/api/model/weatherWeekModel.dart';
 
 abstract class WeatherState extends Equatable {
   const WeatherState();

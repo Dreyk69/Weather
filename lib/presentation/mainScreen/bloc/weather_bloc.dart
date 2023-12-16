@@ -2,10 +2,10 @@
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../data/api/model/WeatherTodayModel.dart';
-import '../../../data/api/model/WeatherHoursModel.dart';
-import '../../../data/api/model/WeatherWeekModel.dart';
-import '../../../data/api/service/WeatherService.dart';
+import '../../../data/api/model/weatherTodayModel.dart';
+import '../../../data/api/model/weatherHoursModel.dart';
+import '../../../data/api/model/weatherWeekModel.dart';
+import '../../../data/api/service/weather_service.dart';
 import 'WeatherEvent.dart';
 import 'WeatherState.dart';
 

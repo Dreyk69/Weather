@@ -1,12 +1,12 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import '../model/WeatherTodayModel.dart';
-import '../model/WeatherHoursModel.dart';
-import '../model/WeatherWeekModel.dart';
+import '../model/weatherTodayModel.dart';
+import '../model/weatherHoursModel.dart';
+import '../model/weatherWeekModel.dart';
 
 class WeatherService {
-  static const String _apiKey = "08ccf56a78374671991104927232911";
+  static const String _apiKey = "b1875e390eee422cbf5122424231612";
 
   static Future<Weather> fetchCurrentWeather({query}) async {
     String url = 'http://api.weatherapi.com/v1/current.json?key=$_apiKey&q=$query&aqi=no&lang=ru';
@@ -38,7 +38,7 @@ class WeatherService {
 
   static Future<List<WeatherWeekModel>> fetchWeekWeather({query}) async {
     var url =
-        'http://api.weatherapi.com/v1/forecast.json?key=$_apiKey&q=$query&days=7&aqi=no&lang=ru';
+        'http://api.weatherapi.com/v1/forecast.json?key=$_apiKey&q=$query&days=3&aqi=no&lang=ru';
     final response = await http.post(Uri.parse(url));
 
    if (response.statusCode == 200) {

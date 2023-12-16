@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:krosplatforma/presentation/settingsScreen/settingsScreen.dart';
 
-import '../presentation/mainScreen/mainScreen.dart';
+import '../presentation/mainScreen/main_screen.dart';
 
 class Application extends StatelessWidget {
   const Application({super.key});

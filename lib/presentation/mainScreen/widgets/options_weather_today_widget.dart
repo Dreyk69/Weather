@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../data/api/model/WeatherTodayModel.dart';
-import 'OptionsWeatherCardToday.dart';
+import '../../../data/api/model/weatherTodayModel.dart';
+import 'options_weather_card_today_widget.dart';
 
 class OptionsWeatherToday extends StatelessWidget {
   final Weather weather;

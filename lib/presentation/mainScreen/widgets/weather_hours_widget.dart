@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-import '../../../data/api/model/WeatherHoursModel.dart';
-import 'WeatherCardHourse.dart';
+import '../../../data/api/model/weatherHoursModel.dart';
+import 'weather_card_hourse_widget.dart';
 
 class HourlyWeather extends StatelessWidget {
   final List<WeatherHoursModel> hourlyWeather;
