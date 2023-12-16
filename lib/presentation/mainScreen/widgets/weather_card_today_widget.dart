@@ -8,7 +8,14 @@ class WeatherCard extends StatelessWidget {
   final double iconScale;
   final int feelslike;
 
-  const WeatherCard({super.key, required this.title, required this.temperature, required this.iconCode, this.temperatureFontSize = 32, this.iconScale = 2, required this.feelslike});
+  const WeatherCard(
+      {super.key,
+      required this.title,
+      required this.temperature,
+      required this.iconCode,
+      this.temperatureFontSize = 32,
+      this.iconScale = 2,
+      required this.feelslike});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +31,8 @@ class WeatherCard extends StatelessWidget {
             // scale: iconScale
             Text(
               '$temperature°',
-              style: TextStyle(fontSize: temperatureFontSize, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: temperatureFontSize, fontWeight: FontWeight.bold),
             ),
             Text('Ощущается как $feelslike°')
           ],

@@ -13,8 +13,10 @@ class WeatherWeekModel {
 
   factory WeatherWeekModel.fromJson(Map<String, dynamic> json) {
     return WeatherWeekModel(
-        temperatureDay: double.parse(json['day']['maxtemp_c'].toString()).toInt(),
-        temperatureNight: double.parse(json['day']['mintemp_c'].toString()).toInt(),
+        temperatureDay:
+            double.parse(json['day']['maxtemp_c'].toString()).toInt(),
+        temperatureNight:
+            double.parse(json['day']['mintemp_c'].toString()).toInt(),
         iconCodeDay: json['day']['condition']['icon'],
         data: json['date']);
   }

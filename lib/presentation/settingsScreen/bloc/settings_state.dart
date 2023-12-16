@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
-import '../settingsScreen.dart';
+
+import '../settings_screen.dart';
 
 abstract class SettingsState extends Equatable {
   const SettingsState();
@@ -20,7 +21,7 @@ class SettingsRu extends SettingsState {
 }
 
 class SettingsEng extends SettingsState {
-  final SingingCharacter? character;
+  final SingingCharacter character;
 
   const SettingsEng({required this.character});
 
@@ -28,5 +29,4 @@ class SettingsEng extends SettingsState {
   List<SingingCharacter?> get props => [character];
 }
 
-class SettingsError extends SettingsState {
-}
+class SettingsError extends SettingsState {}

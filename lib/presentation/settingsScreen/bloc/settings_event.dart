@@ -1,9 +1,11 @@
 import 'package:equatable/equatable.dart';
 
-import '../settingsScreen.dart';
+import '../settings_screen.dart';
 
 abstract class SettingsEvent extends Equatable {
   const SettingsEvent([List props = const []]);
+
+  SingingCharacter? get event => null;
 }
 
 class SettingsCurrentPositionRequested extends SettingsEvent {
@@ -14,10 +16,9 @@ class SettingsCurrentPositionRequested extends SettingsEvent {
 }
 
 class SettingsRequested extends SettingsEvent {
-  final SingingCharacter? value;
+  final SingingCharacter value;
 
-  const SettingsRequested({this.value})
-      : super();
+  const SettingsRequested({required this.value}) : super();
 
   @override
   List<SingingCharacter?> get props => [value];

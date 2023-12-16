@@ -1,6 +1,5 @@
 import 'package:flutter/widgets.dart';
-
-import '../../../data/api/model/weatherHoursModel.dart';
+import '../../../data/api/model/weather_hours_model.dart';
 import 'weather_card_hourse_widget.dart';
 
 class HourlyWeather extends StatelessWidget {
@@ -20,7 +19,7 @@ class HourlyWeather extends StatelessWidget {
                 title: hourlyWeather[i].time.substring(11),
                 temperature: hourlyWeather[i].temperatureHours.toInt(),
                 iconCode: hourlyWeather[i].iconCodeHours,
-                temperatureFontSize: 20, 
+                temperatureFontSize: 20,
               );
             }));
   }

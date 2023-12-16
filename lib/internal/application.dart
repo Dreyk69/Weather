@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:krosplatforma/presentation/settingsScreen/settingsScreen.dart';
 
 import '../presentation/mainScreen/main_screen.dart';
+import '../presentation/settingsScreen/settings_screen.dart';
 
 class Application extends StatelessWidget {
   const Application({super.key});
@@ -16,7 +16,7 @@ class Application extends StatelessWidget {
       ),
       home: const MainScreen(),
       routes: {
-        SettingsSreen.routeName:(context) => SettingsSreen(),
+        SettingsSreen.routeName: (context) => SettingsSreen(),
       },
       initialRoute: '/',
     );

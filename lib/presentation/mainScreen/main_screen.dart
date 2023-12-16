@@ -10,14 +10,13 @@ import 'widgets/main_screeen_widget.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
-   static const routeName = '/';
+  static const routeName = '/';
 
   @override
   State<StatefulWidget> createState() => _MainScreenState();
 }
 
 class _MainScreenState extends State<MainScreen> {
-
   void navigatorForSetting() {
     Navigator.of(context).pushNamed(SettingsSreen.routeName);
   }

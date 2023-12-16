@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../data/api/model/weatherTodayModel.dart';
+import '../../../data/api/model/weather_today_model.dart';
 import 'options_weather_card_today_widget.dart';
 
 class OptionsWeatherToday extends StatelessWidget {
@@ -23,7 +22,7 @@ class OptionsWeatherToday extends StatelessWidget {
     } else if (weather.uv > 6.0 && weather.uv < 8.0) {
       String uv = 'Высокий';
       return uv;
-    }  else if (weather.uv > 8.0 && weather.uv < 10.0) {
+    } else if (weather.uv > 8.0 && weather.uv < 10.0) {
       String uv = 'Очень высокий';
       return uv;
     } else {

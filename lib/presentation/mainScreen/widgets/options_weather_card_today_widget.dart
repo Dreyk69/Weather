@@ -4,9 +4,8 @@ class OptionsWeatherCardToday extends StatelessWidget {
   final String options;
   final String optionsMeaning;
 
-  const OptionsWeatherCardToday({super.key, required this.options, required this.optionsMeaning});
-
-  
+  const OptionsWeatherCardToday(
+      {super.key, required this.options, required this.optionsMeaning});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +19,7 @@ class OptionsWeatherCardToday extends StatelessWidget {
             Text(
               optionsMeaning,
               style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
-            ), 
+            ),
           ],
         ),
       ),

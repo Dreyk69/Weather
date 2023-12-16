@@ -14,8 +14,7 @@ class WeatherCurrentPositionRequested extends WeatherEvent {
 class WeatherRequested extends WeatherEvent {
   final String city;
 
-  const WeatherRequested({this.city = ""})
-      : super();
+  const WeatherRequested({this.city = ""}) : super();
 
   @override
   List<Object> get props => [city];

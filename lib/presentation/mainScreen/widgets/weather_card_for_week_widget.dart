@@ -10,7 +10,14 @@ class WeatherCardForWeek extends StatelessWidget {
   final String iconCodeDay;
   final String data;
 
-  const WeatherCardForWeek({super.key, required this.iconCodeDay, required this.temperatureFontSize, this.iconScale = 2, required this.temperatureDay, required this.temperatureNight, required this.data});
+  const WeatherCardForWeek(
+      {super.key,
+      required this.iconCodeDay,
+      required this.temperatureFontSize,
+      this.iconScale = 2,
+      required this.temperatureDay,
+      required this.temperatureNight,
+      required this.data});
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +33,9 @@ class WeatherCardForWeek extends StatelessWidget {
             // scale: iconScale
             Text(
               '$temperatureDay°/$temperatureNight°',
-              style: TextStyle(fontSize: temperatureFontSize, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: temperatureFontSize, fontWeight: FontWeight.bold),
             ),
-            
           ],
         ),
       ),

@@ -2,10 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:krosplatforma/presentation/mainScreen/widgets/weather_week_widget.dart';
-
-import '../../../data/api/model/weatherTodayModel.dart';
-import '../../../data/api/model/weatherHoursModel.dart';
-import '../../../data/api/model/weatherWeekModel.dart';
+import '../../../data/api/model/weather_hours_model.dart';
+import '../../../data/api/model/weather_today_model.dart';
+import '../../../data/api/model/weather_week_model.dart';
 import 'options_weather_today_widget.dart';
 import 'weather_card_today_widget.dart';
 import 'weather_hours_widget.dart';

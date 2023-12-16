@@ -42,7 +42,7 @@ class SettingsSreen extends StatelessWidget {
                           groupValue: character,
                           onChanged: (SingingCharacter? value) {
                             BlocProvider.of<SettingBloc>(context).add(
-                                SettingsRequested(value: SingingCharacter.ru));
+                                const SettingsRequested(value: SingingCharacter.ru));
                           },
                         ),
                       ),
@@ -53,7 +53,7 @@ class SettingsSreen extends StatelessWidget {
                           groupValue: character,
                           onChanged: (SingingCharacter? value) {
                             BlocProvider.of<SettingBloc>(context).add(
-                                SettingsRequested(value: SingingCharacter.eng));
+                                const SettingsRequested(value: SingingCharacter.eng));
                           },
                         ),
                       ),

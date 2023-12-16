@@ -7,7 +7,13 @@ class WeatherCardHourse extends StatelessWidget {
   final double temperatureFontSize;
   final double iconScale;
 
-  const WeatherCardHourse({super.key, required this.title, required this.temperature, required this.iconCode, this.temperatureFontSize = 32, this.iconScale = 2});
+  const WeatherCardHourse(
+      {super.key,
+      required this.title,
+      required this.temperature,
+      required this.iconCode,
+      this.temperatureFontSize = 32,
+      this.iconScale = 2});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +29,8 @@ class WeatherCardHourse extends StatelessWidget {
             // scale: iconScale
             Text(
               '$temperature°',
-              style: TextStyle(fontSize: temperatureFontSize, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: temperatureFontSize, fontWeight: FontWeight.bold),
             ),
           ],
         ),

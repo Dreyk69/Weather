@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../data/api/model/weatherWeekModel.dart';
+import '../../../data/api/model/weather_week_model.dart';
 import 'weather_card_for_week_widget.dart';
 
 class WeekWeather extends StatelessWidget {
